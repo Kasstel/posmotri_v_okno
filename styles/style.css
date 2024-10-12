@@ -219,14 +219,16 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  padding-bottom: 26px;
+  padding-bottom: 29px;
 }
 
 .content__video-card {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 51% 1fr;
   width: 394px;
-  height: 107px;
+  /*display: flex;
+  justify-content: space-between;
+  height: 107px;*/
 }
 
 .content__card-link {
@@ -283,7 +285,10 @@ ol {
   color: #fff;
   text-transform: uppercase;
   padding: 2px 1px 5px 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .content__video-card-description {
   font-family: Fira Sans Condensed, sans-serif;
@@ -292,6 +297,13 @@ ol {
   line-height: 19.2px;
   padding: 0 1px 4px 2px;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
 }
 
 .more-button {
@@ -299,7 +311,6 @@ ol {
 }
 
 .preloader-template {
-  position: absolute;
   inset: 0;
 }
 
