@@ -37,15 +37,18 @@ ol {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  min-height: 534px;
 }
 
 .content {
+  padding-top: 10px;
   display: flex;
-  align-items: flex-end;
-  width: 95%;
-  gap: 30px;
-  padding-bottom: 50px;
+  flex-direction: row;
+  align-items: end;
+  width: 1140px;
+  column-gap: 30px;
+  justify-content: center;
 }
 
 .result__video-container {
@@ -53,7 +56,7 @@ ol {
   overflow: hidden;
   display: flex;
   min-width: 711px;
-  max-height: 404px;
+  max-height: 386px;
   padding-bottom: 20px;
 }
 
@@ -68,6 +71,8 @@ ol {
   display: flex;
   justify-content: space-between;
   gap: 14px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .search-form__fieldset {
@@ -92,7 +97,7 @@ ol {
 }
 
 .button:active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #545050;
 }
 
 .button:hover {
@@ -156,6 +161,7 @@ ol {
   width: fit-content;
   cursor: pointer;
   gap: 4px;
+  align-items: center;
 }
 
 .search-form__fieldset-title {
@@ -213,9 +219,8 @@ ol {
 .content__list {
   max-height: 310px;
   overflow-y: auto;
-  overflow-x: hidden;
   position: relative;
-  padding-top: 13px;
+  padding-top: 10px;
 }
 
 .content__list-item:not(:last-child) {
@@ -233,21 +238,21 @@ ol {
   outline: none;
 }
 
-.content__card-link_current p,
-.content__card-link_current h2,
+
 .content__card-link:hover p,
 .content__card-link:hover h2 {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
-.content__card-link_current p,
+
 .content__card-link:hover p {
   text-underline-offset: 4px;
 }
 
-.content__card-link:active {
-  background-color: rgba(255, 255, 255, 0.5);
+.content__card-link:active, .content__card-link_current {
+  background-color: #545050;
+  ;
 }
 
 .content__card-link:focus {
@@ -264,8 +269,8 @@ ol {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: flex-end;
+  gap: 11px;
+  padding-bottom: 11px;
 }
 
 .content__card-link {
@@ -282,6 +287,8 @@ ol {
   padding: 2px 1px 5px 2px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap; 
+  max-width: 200px;
 }
 
 
@@ -294,21 +301,21 @@ ol {
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap; 
+  max-width: 200px;
 }
 
 .content__video-card-thumbnail{
   min-width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
   width: 100%;
 }
 
-.preloader-template {
-  inset: 0;
-}
 
 .visually-hidden {
   position: absolute;
